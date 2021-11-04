@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula livre de HTML Form Elements</title>
+        <link 
+        rel="stylesheet"
+        href="CSS/EstiloFormulário.css"
+        >
+    </head>
+
+    <body>
+        <h2>Elementos de Formulários</h2>
+      
+        <form action="/action_page.php">
+            <label for="fname">Nome e Sobrenome:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="Sem Ação" value="Sem Ação">
+        </form>
+
+        <h2>O elemento datalist</h2>
+
+<p>O elemento datalist especifica uma lista de opções predefinidas para um elemento de entrada.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><b>Observação:</b> Observação: a tag datalist não é compatível com o Safari versão anterior 12.1.</p>
+
+
+<h2>Estilo Textarea</h2>
+
+<p>Use CSS para alterar o tamanho da área de texto:</p>
+
+<form action="/action_page.php">
+  <textarea name="message" style="width:200px; height:600px;">O gato estava brincando no jardim.</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+
+<h2>Permitir Múltiplas Seleções</h2>
+
+<p>Use o atributo múltiplo para permitir que o usuário selecione mais de um valor.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Escolha um carro :</label>
+  <select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="Enviar">
+</form>
+
+<p>Mantenha pressionado o botão Ctrl (windows) / Command (Mac) para selecionar várias opções.</p>
+
+
+<h2>Opção pré-selecionada</h2>
+
+<p>Você pode pré-selecionar uma opção com o atributo selecionado:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Escolha um carro:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="Enviar">
+</form>
+
+</body>
+
+
+
+    </body>
+
+</html>
